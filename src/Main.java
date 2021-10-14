@@ -3,8 +3,8 @@ import java.io.File;
 public class Main {
         static final File FHOME= new File(System.getProperty("user.home"));
 
-    public static void main(String args[]){
-
+    public static void main(String []args){
+        crear2();
     }
 
 
@@ -15,7 +15,7 @@ public class Main {
             new File(FHOME,"Pruebas/Primera/Tercera").mkdirs();
             new File(FHOME,"Pruebas/Segunda").mkdirs();
         }else{
-            System.out.println("Este método sólamente funciona en sistemas Windows");
+            System.out.println("Este método sólamente funciona en sistemas Linux");
         }
     }
 
@@ -27,7 +27,7 @@ public class Main {
             new File(FHOME, "Pruebas/Primera/").delete();
             new File(FHOME, "Pruebas/Segunda/").delete();
         }else{
-            System.out.println("Este método sólamente funciona en sistemas Windows");
+            System.out.println("Este método sólamente funciona en sistemas Linux");
         }
     }
 
@@ -43,7 +43,7 @@ public class Main {
              exito = new File(FHOME, "Pruebas/Primera/Tercera").mkdirs() & new File(FHOME, "Pruebas/Segunda").mkdirs();
 
         }else{
-            System.out.println("Este método sólamente funciona en sistemas Windows");
+            System.out.println("Este método sólamente funciona en sistemas Linux");
         }
         return exito;
     }
